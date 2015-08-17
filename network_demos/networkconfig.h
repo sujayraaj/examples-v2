@@ -1,3 +1,6 @@
+#ifndef __NETWORK_CONFIG_H__
+#define __NETWORK_CONFIG_H__
+
 #include <rtems/malloc.h>
 #include <rtems/libcsupport.h>
 
@@ -137,3 +140,4 @@ default_network_on_exit(int exit_code, void *arg)
 }
 
 
+#endif
