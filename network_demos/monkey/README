@@ -1,0 +1,22 @@
+This is a sample test that helps the user use/integrate the monkey web server in their program.
+To use the test, monkey web server should be built on your system for rtems. Monkey web server is
+built as a static library and the include files along with the libraries are provided to the makefile.
+
+to get and build Monkey web server for rtems ( presently a fork until merged with the main monkey repo )  : 
+
+git clone https://github.com/sujayraaj/monkey
+
+To make this test : 
+
+make MONKEY_INC=<include-directory>  \
+LIBBSD=<complete-path-of-libbsd.a> \
+LIBMONKEY=<complete-path-of-libmonkey.a> \
+LIBMONKEY_CORE=<complete-path-of-libmk_core.a> \
+LIBMONKEY_LIANA=<complete-path-of-monkey-liana.a> 
+
+To run this test : 
+
+qemu-system-arm -M xilinx-zynq-a9 -m 256M \
+-monitor null -serial null -serial stdio -nographic \
+-no-reboot -net nic,model=cadence_gem,macaddr=00:d0:ba:5e:ba:ee -net tap \
+-kernel o-optimize/monkey.exe
