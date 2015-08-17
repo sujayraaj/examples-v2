@@ -10,5 +10,3 @@ SUBDIRS += uboot
 
 # Language Specific Examples
 SUBDIRS += cxx
-
-SUBDIRS += network_demos
