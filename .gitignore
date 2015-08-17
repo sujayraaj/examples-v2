@@ -2,3 +2,7 @@
 .lock-waf_*
 *~
 build/*
+*.o  
+*.exe  
+*.num  
+*.ralf
