@@ -27,7 +27,8 @@ include $(PROJECT_ROOT)/make/leaf.cfg
 #
 # (OPTIONAL) Add local stuff here using +=
 #
-
+LIBMONKEY_CORE=$(LIBMONKEY)
+LIBMONKEY_LIANA=$(LIBMONKEY)
 override DEFINES  +=
 CPPFLAGS +=
 CFLAGS   += -I$(MONKEY_INC) -L$(LIBBSD) -L$(LIBMONKEY) -L$(LIBMONKEY_CORE) -L$(LIBMONKEY_LIANA)

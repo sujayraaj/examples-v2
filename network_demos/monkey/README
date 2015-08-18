@@ -10,9 +10,7 @@ To make this test :
 
 make MONKEY_INC=<include-directory>  \
 LIBBSD=<complete-path-of-libbsd.a> \
-LIBMONKEY=<complete-path-of-libmonkey.a> \
-LIBMONKEY_CORE=<complete-path-of-libmk_core.a> \
-LIBMONKEY_LIANA=<complete-path-of-monkey-liana.a> 
+LIBMONKEY=<complete-path-of-libmonkey.a/libmk_core.a/monkey-liana.a. the sbin directory if installed through RSB> 
 
 To run this test : 
 
